@@ -388,6 +388,17 @@ tbody tr{border-bottom:1px solid #EEF2FA;}
 .sb-group .sb-sub .sb-body{margin-left:14px;}
 .sb-nav{padding:10px 12px 28px;}
 .sb-item .nm{white-space:normal;overflow:visible;text-overflow:clip;overflow-wrap:break-word;}
+
+/* sidebar hero: more air, search separated */
+.sb-top{position:relative;padding:34px 24px 24px;border-bottom:none;}
+.sb-top::before,.sb-top::after{height:190px;}
+.sb-eyebrow{margin-bottom:14px;font-size:10px;}
+.sb-title{font-size:30px;letter-spacing:-.9px;line-height:1.08;margin-bottom:0;}
+.sb-title::after{content:"";display:block;width:34px;height:2px;margin-top:18px;border-radius:2px;background:linear-gradient(90deg,#A1FBF9,#C2A3FF);}
+.sb-search{margin-top:22px;padding:11px 16px 11px 40px;font-size:13px;border-radius:999px;background:rgba(255,255,255,.08) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-opacity='.55' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='11' cy='11' r='7'/%3E%3Cpath d='M20 20l-3.5-3.5'/%3E%3C/svg%3E") no-repeat 15px 50%;}
+.sb-desc{position:relative;z-index:2;margin-top:14px;font-size:12.5px;line-height:1.55;font-weight:300;color:rgba(255,255,255,.68);max-width:230px;}
+.sb-nav{padding-top:4px;}
+@media(max-width:960px){ .sb-top{padding:28px 22px 20px;} }
 </style>
 </head>
 <body>
@@ -396,6 +407,7 @@ tbody tr{border-bottom:1px solid #EEF2FA;}
     <div class="sb-top">
       <div class="sb-eyebrow">TransPerfect · GlobalLink</div>
       <div class="sb-title">Lead Tracker</div>
+      <div class="sb-desc">Paid campaign leads, spend and results across LinkedIn, Meta and Google.</div>
       <input class="sb-search" id="sb-search" type="search" placeholder="Find a campaign…" autocomplete="off"/>
     </div>
     <nav class="sb-nav" id="sb-nav"></nav>
